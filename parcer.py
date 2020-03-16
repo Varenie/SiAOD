@@ -88,7 +88,7 @@ elif(answer == '2'):
         c = float(cur)
         newCurrency.append(c)
 
-    plt.figure(num="NOK/RUB Currency", figsize=(10,9), dpi= 80)
+    plt.figure(num="NOK/RUB Currency", figsize=(10,9))
     plt.plot(newDate, newCurrency)
     plt.title('NOK/RUB(10) Currencies')
     plt.ylabel('currencies')
