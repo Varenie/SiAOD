@@ -30,7 +30,7 @@ def parcerView(df):
 
 def parcerData(start_date, end_date):
 
-    url = 'http://www.cbr.ru/currency_base/dynamics/?UniDbQuery.Posted=True&UniDbQuery.mode=1&UniDbQuery.date_req1=&UniDbQuery.date_req2=&UniDbQuery.VAL_NM_RQ=R01535&UniDbQuery.FromDate=' + str(start_date) + '&UniDbQuery.ToDate=' + str(end_date)
+    url = 'https://cbr.ru/currency_base/dynamics/?UniDbQuery.Posted=True&UniDbQuery.mode=1&UniDbQuery.date_req1=&UniDbQuery.date_req2=&UniDbQuery.VAL_NM_RQ=R01535&UniDbQuery.From=' + str(start_date) + '&UniDbQuery.To=' + str(end_date)
 
     r = requests.get(url) #запрос на подключение к сайту
 

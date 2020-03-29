@@ -11,7 +11,7 @@ answer = input()
 
 
 if(answer == '1'):
-    url = 'http://www.cbr.ru/currency_base/dynamics/?UniDbQuery.Posted=True&UniDbQuery.mode=1&UniDbQuery.date_req1=&UniDbQuery.date_req2=&UniDbQuery.VAL_NM_RQ=R01535&UniDbQuery.FromDate=01.01.2010&UniDbQuery.ToDate=03.03.2020'
+    url = 'https://cbr.ru/currency_base/dynamics/?UniDbQuery.Posted=True&UniDbQuery.mode=1&UniDbQuery.date_req1=&UniDbQuery.date_req2=&UniDbQuery.VAL_NM_RQ=R01535&UniDbQuery.From=01.01.2010&UniDbQuery.To=03.03.2020'
 
     r = requests.get(url) #запрос на подключение к сайту
 
@@ -56,7 +56,7 @@ elif(answer == '2'):
 
     print("Введите конечную дату(дд.мм.гггг)")
     req2 = input()
-    url = 'http://www.cbr.ru/currency_base/dynamics/?UniDbQuery.Posted=True&UniDbQuery.mode=1&UniDbQuery.date_req1=&UniDbQuery.date_req2=&UniDbQuery.VAL_NM_RQ=R01535&UniDbQuery.FromDate=' + str(req) + '&UniDbQuery.ToDate=' + str(req2)
+    url = 'https://cbr.ru/currency_base/dynamics/?UniDbQuery.Posted=True&UniDbQuery.mode=1&UniDbQuery.date_req1=&UniDbQuery.date_req2=&UniDbQuery.VAL_NM_RQ=R01535&UniDbQuery.From=' + str(req) + '&UniDbQuery.To=' + str(req2)
 
     r = requests.get(url) #запрос на подключение к сайту
 
